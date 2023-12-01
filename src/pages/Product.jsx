@@ -1,10 +1,15 @@
-
+import PageNav from "../components/PageNav"
 function Product() {
 
 
-  return  <div> Random words</div>
+  return  (
+    <div>  
+      <PageNav />
+      <div> Random words</div>
+      </div>
 
- 
+
+ )
 
   
 }
