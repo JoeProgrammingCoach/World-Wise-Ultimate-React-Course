@@ -1,6 +1,8 @@
 // Uses the same styles as Product
+import {useState,  useEffect } from "react";
 import PageNav from "../components/PageNav";
 import styles from "./Product.module.css";
+
 
 export default function Product() {
   return (
