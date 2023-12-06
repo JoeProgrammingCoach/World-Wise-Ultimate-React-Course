@@ -1,16 +1,27 @@
-import { useState } from 'react'
-import PageNav from "../components/PageNav"
+// Uses the same styles as Product
+import PageNav from "../components/PageNav";
+import styles from "./Product.module.css";
 
-
-function Pricing() {
-  const [count, setCount] = useState(0)
-
+export default function Product() {
   return (
-    <div>
-  <PageNav />
-  <div>Pricing</div>
-  </div>
- )
-}
+    <main className={styles.product}>
+      <PageNav />
 
-export default Pricing
+      <section>
+        <div>
+          <h2>
+            Simple pricing.
+            <br />
+            Just $9/month.
+          </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel
+            labore mollitia iusto. Recusandae quos provident, laboriosam fugit
+            voluptatem iste.
+          </p>
+        </div>
+        <img src="img-2.jpg" alt="overview of a large city with skyscrapers" />
+      </section>
+    </main>
+  );
+}
