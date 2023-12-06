@@ -5,7 +5,7 @@ import AppNav from "./AppNav"
 function Sidebar() {
 
    return (
-      <div classname={styles.sidebar}>
+      <div className={styles.sidebar}>
             <Logo/>
             <AppNav/>
             <p>List of cities</p>
