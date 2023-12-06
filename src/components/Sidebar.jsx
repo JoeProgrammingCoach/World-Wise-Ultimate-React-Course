@@ -8,15 +8,15 @@ function Sidebar() {
    return (
       <div className={styles.sidebar}>
             <Logo/>
-            <AppNav/>
+
           
           <Outlet />
 
             <footer className={styles.footer}>
-               <p className={styles.copyright}>
+               <div className={styles.copyright}>
                   &copy; Copyright {new Date().getFullYear()}
                   by WorldWise Inc.
-               </p>
+               </div>
             </footer>
       </div>
       )
@@ -24,3 +24,4 @@ function Sidebar() {
 }
 
 export default Sidebar
+

@@ -6,7 +6,7 @@ import HomePage from "./pages/Homepage"
 import PageNotFound from "./pages/PageNotFound"
 import AppLayout from "./AppLayout"
 import Login from "./pages/Login"
-
+import CityList from "./components/CityList"
 
 
 function App() {
@@ -16,12 +16,13 @@ function App() {
 
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<HomePage />}/>
+      <Route index element={<HomePage />}/>
   <Route path="product" element={<Product />}/>
   <Route path="pricing" element={<Pricing />}/>
   <Route path ="login" element={<Login/>}/>
   <Route path="app" element={<AppLayout />}>
-      <Route path="cities" element={<p>List of cities</p>}/>
+      <Route index element = {<p><CityList /></p>}/>{/* this will appear when no route is after app*/}
+      <Route path="cities" element={<p><CityList /></p>}/>
       <Route path="countries" element={<p>Countries</p>}/>
       <Route path="form" element={<p>Form</p>}/>
     </Route>
